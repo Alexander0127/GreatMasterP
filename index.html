@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Martel+Sans&family=Montserrat&family=Yantramanav&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2016/06/01/12/59/pizza-1428929_1280.png">
+    <script src="./index.js"></script>
+    <title>Great Master</title>
+</head>
+<body id="body">
+    <header id="header">
+        <section id="burger-header" class="nav">
+            <a onclick="Mostrar()" id="btn-menu"><img src="https://cdn-icons-png.flaticon.com/512/660/660376.png" class="menu-img-logo"></a> 
+            <ul id="menu-mobile" class="menu-mobile">
+                <li><a href="./index.html" class="a-list">Inicio</a></li>
+                <li><a href="#pizzas" onclick="CerrarMenuBurger()" class="a-list">Pizzas</a></li>
+                <li><a href="#nosotros" onclick="CerrarMenuBurger()"  class="a-list">Nosotros</a></li>
+            </ul>
+            <p class="p-header">Great Master</p>
+            <a id="btn-user" href="https://api.whatsapp.com/send?phone=+51977818257&text=Hola%20Great%20Master,%20quiero%20informaci%C3%B3n%20sobre%20las%20pizzas%20%F0%9F%8D%95%F0%9F%98%8E."><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="menu-img-usuario"></a>
+        </section>       
+        <section class="nav" id="nav-bar">
+            <a class="menu-main" id="a-inicio" href="">Inicio</a>
+            <a class="menu-main" href="#pizzas">Pizzas</a>
+            <a class="menu-main" href="#nosotros">Nosotros</a>
+        </section>
+    </header>
+    <main>
+        <div class="img-container-main" id="img-container-main">
+
+        </div>
+        <section class="main-info" id="nosotros">
+            
+            <h2 class="h2-info">Great Master somos una pizzería, somos una tradición</h2>
+            <p class="p-info">La pizza tradicional de la familia NIño de Guzman, ubícanos en Parcona City delivery gratis en todas nuestras pizzas</p>
+        </section>
+        <!-- seccion de servicios -->
+        <!-- <img src="https://dmkz2i5qfmsty.cloudfront.net/09ef3913-d6ad-458f-a710-ba572cbf524b.jpg" alt=""> -->
+        <div class="main-2">
+            <h2 class="h2-main2">Nuestros Servicios</h2>
+            <div class="servicio">
+                <div class="servicio-img" id="servicio-img1"></div>
+                <div class="servicio-text">
+                    <h4 class="h4-main2">Envíos a domicilio</h4>
+                    <p class="p-main2">Entrega sin contacto. Seguimos todos los protocolos de seguridad para cuidar tu salud.</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <div class="servicio-img" id="servicio-img2"></div>
+                <div class="servicio-text">
+                    <h4 class="h4-main2">Pedidos online</h4>
+                    <p class="p-main2">Puedes realizar tu pedido desde la aplicación o vía web.</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <div class="servicio-img" id="servicio-img3"></div>
+                <div class="servicio-text">
+                    <h4 class="h4-main2">Recojo en tienda</h4>
+                    <p class="p-main2">Acércate a nuestro local y muestra tu DNI para que recibas tu producto.</p>
+                </div>
+            </div>
+        </div> 
+        <!-- seccion de cards -->
+        <div class="card-container" id="pizzas">
+            <div class="card-img-container" id="img-cardpizza1">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Hawaiana</h6>
+                <p class="p-descripcion" id="p-descripcionHawaiana">¡El paraiso en la mesa! Se completa con jamón, jugosa piña y queso mozzarella.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-hawaiana">S/50.00</p>
+                    <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionHawaiana()" type="button">Comprar</button></a>
+                </div> 
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-img-container" id="img-cardpizza2">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Americana</h6>
+                <p class="p-descripcion" id="p-descripcionAmericana">¡La Pizza preferida de los chicos! Jamón y queso mozzarella.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-americana">S/50.00</p>
+                    <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionAmericana()"  type="button">Comprar</button></a>
+                </div> 
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-img-container" id="img-cardpizza3">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Pepperoni</h6>
+                <p class="p-descripcion" id="p-descripcionPepperoni">Sabor incomparable de pepperoni americano y queso mozzarella.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-pepperoni">S/50.00</p>
+                    <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionPepperoni()"  type="button">Comprar</button></a>
+                </div> 
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-img-container" id="img-cardpizza4">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Mozzarella</h6>
+                <p class="p-descripcion" id="p-descripcionMozzarella">Para los amantes del queso una deliciosa pizza con nuestro queso mozzarella gratinado.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-mozzarella">S/50.00</p>
+                    <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionMozzarella()"  type="button">Comprar</button></a>
+                </div> 
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-img-container" id="img-cardpizza5">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Vegetariana</h6>
+                <p class="p-descripcion" id="p-descripcionVegetariana">Exquisita combinación de champiñones, aceitunas verdes, pimientos verdes, cebolla roja y queso mozzarella.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-vegetariana">S/50.00</p>
+                    <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionVegetariana()"  type="button">Comprar</button></a>
+                </div> 
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-img-container" id="img-cardpizza6">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Clásica</h6>
+                <p class="p-descripcion" id="p-descripcionClasica">Queso, pepperoni, jamón y champiñon para disfrutar un buen sabor.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-clasica">S/50.00</p>
+                   <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionClasica()"  type="button">Comprar</button></a>
+                </div> 
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-img-container" id="img-cardpizza7">
+                
+            </div>
+            <div class="card-text-container">
+                <h6 class="nombre-pizza">Suprema</h6>
+                <p class="p-descripcion" id="p-descripcionSuprema">Combinación de pepperoni, carne de res, carne de cerdo, champiñones, pimientos verdes, cebolla roja y queso mozzarella.</p>
+                <div class="container-precio-button">
+                    <p class="p-precio" id="precio-suprema">S/50.00</p>
+                    <a class="ancla-button" href="#formulario-compra"><button class="card-button" onclick="ObtenerDescripcionSuprema()"  type="button">Comprar</button></a>
+                </div>   
+            </div>
+        </div>
+          
+    </main>
+    <section class="for-container">
+        <form action="POST" id="formulario-compra">
+            <h3>Su pedido</h3>
+            <div id="img-container-form">
+
+            </div>
+            <p id="form-descripcion"></p>
+            <input id="form-direccion" type="text" placeholder="Ingrese su dirección">
+            <div class="container-cantidad-form">
+                <button type="button" id="menosbtn" onclick="Disminuir()">-</button>
+                <input id="cantidad" disabled type="number" autocomplete="off" value="0">
+                <button type="button" id="masbtn" onclick="Aumentar()">+</button>
+            </div>
+            <p id="form-precio"></p>
+            <button onclick="Broma()" type="button" id="btn-pagar">Pagar</button>
+        </form>
+    </section>
+    <footer>
+        <a href="https://www.facebook.com/pizzeriagreatmaster"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="btn-footer"></a>
+        <a href="https://instagram.com/pizzeriagreatmaster?utm_medium=copy_link"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="btn-footer"></a>
+        
+    </footer>
+</body>
+</html>
+
+<!-- https://cdn-icons.flaticon.com/png/512/5450/premium/5450482.png?token=exp=1641433940~hmac=933a061f9f924a8852a1d5017d73e32d -->
